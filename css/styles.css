@@ -1,3 +1,58 @@
-body {
-	background-color: red;
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/polina.jpg) no-repeat;
+    background-size: cover; 
+}
+
+#box {
+    width: 50%;
+    position: absolute;
+    padding: 3%;
+    top: 50%;
+    left: 25%;
+     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#box h1{
+    font-size: 5em;
+    margin-bottom: -.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#box p {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 35px;
+}
+
+#box a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    margin: 0 auto;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
