@@ -13,6 +13,11 @@ video#bgvid {
     background-size: cover; 
 }
 
+
+/*******************************************
+**************    CONTENT    ***************
+*******************************************/
+
 #box {
     width: 50%;
     position: absolute;
@@ -26,12 +31,10 @@ video#bgvid {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    text-shadow: 1px 1px grey;
 }
 
 #box h1{
     font-size: 5em;
-    margin-bottom: -.5em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
@@ -57,10 +60,46 @@ video#bgvid {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    margin-top: 20px;
 }
 
-#box img {
-    display: block;
+
+/***********************************************
+*********************  NAV  ********************
+***********************************************/
+
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 60px
+}
+
+#logo {
+    width: 40%;
+    float: left;
+}
+
+#logo img {
     width: 30%;
-    margin: -50px auto;
+    padding: 20px 30px;
+}
+
+#menu {
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    line-height: 60px;
+    padding-left: 30px;
+}
+
+nav li {
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
