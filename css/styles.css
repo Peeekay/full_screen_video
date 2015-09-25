@@ -13,11 +13,6 @@ video#bgvid {
     background-size: cover; 
 }
 
-body {
-    background-color: red;
-}
-
-
 /*******************************************
 **************    CONTENT    ***************
 *******************************************/
@@ -73,7 +68,7 @@ body {
 ***********************************************/
 
 nav {
-    background-color: rgba(255, 255, 255, 0.7);
+    /*background-color: rgba(255, 255, 255, 0.7);*/
     height: 60px
 }
 
@@ -118,4 +113,27 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: .75em;
     padding: 10px 30px;
+}
+
+
+
+@media (max-width: 768px)  {
+
+    
+    #box {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #box h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    #box p {
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        line-height: 23px;
+    }
+
 }
