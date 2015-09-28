@@ -11,6 +11,9 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(../images/polina.jpg) no-repeat;
     background-size: cover; 
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
 }
 
 /*******************************************
@@ -19,17 +22,10 @@ video#bgvid {
 
 #box {
     width: 50%;
-    position: absolute;
-    padding: 3%;
-    top: 50%;
-    left: 25%;
-     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     text-align: center;
     color: white;
     text-transform: uppercase;
+    margin: 200px auto;
 }
 
 #box h1{
@@ -68,7 +64,6 @@ video#bgvid {
 ***********************************************/
 
 nav {
-    /*background-color: rgba(255, 255, 255, 0.7);*/
     height: 60px
 }
 
@@ -104,42 +99,66 @@ nav li {
 }
 
 /***********************************************
-*********************  Footer  *****************
-***********************************************/
-
-footer {
-    clear: both;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .75em;
-    padding: 10px 30px;
-}
-
-/***********************************************
 *********************  Mobile  *****************
 ***********************************************/
 
 
 @media (max-width: 768px)  {
 
-    
-    #box {
-        width: 70%;
-        margin: 0 auto;
+    html {
+         background: url('../images/hero.png') no-repeat center center fixed;
+         background-size: cover;
+    }
+    #bgvid {
+        display: none;
     }
 
     #box h1 {
-        font-size: 3em;
-        margin-bottom: 20px;
-    }
+        font-size: 3em;margin-bottom: 20px;
+     }
 
     #box p {
         font-size: 1.5em;
         margin-bottom: 50px;
-        line-height: 23px;
+        line-height: 27px;
+    }
+
+    nav ul {
+    padding: 0px;
+    }
+
+    nav li {
+        font-size: 1em;
+        margin: .3em;
+    } 
+
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo img {
+        width: 30%;
+    }
+
+    #menu {
+        width: 100%;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    #box a {
+        width: 150px;
+        font-size: .8em;
+    }
+
+    #box p {
+        font-size: 1.4em;
+    }
+
+    #box {
+    width: 70%;
+    margin: 100px auto;
     }
 
 }
